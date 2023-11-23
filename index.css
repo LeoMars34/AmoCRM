@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0e1014;
+    color: #e4e5ea;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1440px;
+    height: 980px;
+}
+.button {
+    right: -40px;
+    margin-top: 50px;
+    position: relative;
+    width: 262px;
+    height: 61px;
+    background: #4077f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.button button {
+    color: #e4e5ea;
+    text-decoration: none;
+    background: #4077f3;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 262px;
+    height: 61px;
+}
+.second .label {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right, #fcb045, #ff3f78);
+}
+.secondB {
+    margin-left: 100px;
+    margin-top: 35px;
+    text-align: right;
+    gap: 35px;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+.logo {
+    margin-top: 25px;
+    margin-right: 100px;
+}
+.menu {
+    display: flex;
+    gap: 20px;
+    margin-right: 70px;
+}
+a {
+    text-decoration: none;
+    color: #e4e5ea;
+}
+.aboutCompany {
+    position: relative;
+    left: 0;
+}
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    width: 1140px;
+    height: 350px;
+    justify-content: space-between;
+}
+.linearGradient {
+    font-size: 48px;
+    font-weight: 900;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(to right, #fcb045, #ff3f78);
+}
+footer {
+    text-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    gap: 45px;
+}
+.aboutCompany {
+    display: flex;
+    flex-direction: column;
+}
+.aboutCompany a {
+    margin-top: 10px;
+}
+.menuFooter {
+    position: relative;
+    margin-left: 100px;
+}
+.menuFooterA {
+    display: flex;
+    gap: 70px;
+}
+.menuFooterA a {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.contacts {
+    margin-left: 50px;
+    position: relative;
+    text-align: right;
+}
+.contacts p {
+    margin-top: 10px;
+}
+.newSecond {
+    text-align: right;
+}
+.visible {
+    display: none;
+}
+.footerA {
+    margin-top: 150px;
+}
+@media (max-width: 480px) {
+    body {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 460px;
+        height: auto;
+    }
+    .logo {
+        display: none;
+    }
+    .menu {
+        position: absolute;
+        gap: 30px;
+        top: 0;
+        margin-top: 25px;
+    }
+    .remove {
+        display: none;
+    }
+    .content {
+        width: 460px;
+        height: auto;
+        margin-left: 20px;
+    }
+    .newSecond {
+        position: absolute;
+        left: 0;
+        text-align: left;
+        top: 400px;
+        margin-left: 10px;
+    }
+    .newSecond .label {
+        text-transform: none;
+    }
+    .visible {
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        text-wrap: nowrap;
+        gap: 80px;
+        margin-left: 10px;
+        left: 0;
+
+        top: 500px;
+    }
+    .visible p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+        color: #e4e5ea;
+    }
+    .visible p::before {
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-image: linear-gradient(to right, #fcb045, #ff3f78);
+        content: '-';
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 460px;
+        top: 600px;
+        margin-left: 15px;
+    }
+    .aboutCompany {
+        font-size: 14px;
+    }
+    .menuFooter {
+        margin-left: 0px;
+        font-size: 14px;
+    }
+    .contacts {
+        margin-left: 0;
+        text-align: left;
+        font-size: 14px;
+    }
+    .footerA {
+        margin-top: 20px;
+    }
+}
